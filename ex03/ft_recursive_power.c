@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jean-phil <jemartel@student.42quebec>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/23 13:20:13 by jean-phil         #+#    #+#             */
-/*   Updated: 2021/03/23 17:18:49 by jean-phil        ###   ########.fr       */
+/*   Created: 2021/03/23 16:40:12 by jean-phil         #+#    #+#             */
+/*   Updated: 2021/03/23 17:19:05 by jean-phil        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int n)
+int ft_recursive_power(int nbr,int base)
 {
-	if (n == 0)
-		return (1);
-	else
-		return (n * ft_recursive_factorial(n - 1));
+	if (base  == 0)
+		return(1);
+	else return (nbr *= ft_recursive_power(nbr,base - 1));
 }
+
+
