@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jean-phil <jemartel@student.42quebec>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/23 17:51:56 by jean-phil         #+#    #+#             */
-/*   Updated: 2021/03/24 08:14:42 by jean-phil        ###   ########.fr       */
+/*   Created: 2021/03/24 07:41:13 by jean-phil         #+#    #+#             */
+/*   Updated: 2021/03/24 09:03:51 by jean-phil        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_fibonacci(int index)
+#include "stdio.h"
+int	ft_is_prime(int input)
 {
-	if (index == 0)
+	int		iterator;
+	int		output;
+
+	iterator = 2;
+	output = 0;
+	if (input <= 1)
 		return (0);
-	else if (index == 1)
-		return (1);
-	return (ft_fibbonacci(index - 2) + ft_fibbonacci(index - 1));
+	while (iterator <= input)
+	{
+		if (input == iterator)
+			return (1);
+		else if (input % iterator == 0)
+			return (0);
+		iterator++;
+	}
+	return (0);
 }
