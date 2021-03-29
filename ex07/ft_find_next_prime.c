@@ -6,9 +6,10 @@
 /*   By: jean-phil <jemartel@student.42quebec>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/24 08:33:12 by jean-phil         #+#    #+#             */
-/*   Updated: 2021/03/24 09:03:46 by jean-phil        ###   ########.fr       */
+/*   Updated: 2021/03/29 12:20:36 by jean-phil        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 int	ft_is_prime(int input)
 {
 	int		iterator;

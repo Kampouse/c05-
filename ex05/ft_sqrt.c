@@ -6,20 +6,25 @@
 /*   By: jean-phil <jemartel@student.42quebec>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 18:16:05 by jean-phil         #+#    #+#             */
-/*   Updated: 2021/03/24 07:58:01 by jean-phil        ###   ########.fr       */
+/*   Updated: 2021/03/29 12:16:29 by jean-phil        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int num)
 {
-	int		result;
+	float	x;
+	float	y;
+	double	minmum;
 
-	result = 2;
-	if (num == 0 || num == 1)
+	x = num;
+	y = 1;
+	minmum = 0.000001;
+	while (x - y > minmum)
+	{
+		x = (x + y) / 2;
+		y = num / x;
+	}
+	if (x < 0)
 		return (0);
-	else if (result == num)
-		return (result);
-	else
-		++result;
-	return (result * result - 1);
+	return (x);
 }

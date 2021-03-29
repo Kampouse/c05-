@@ -6,10 +6,10 @@
 /*   By: jean-phil <jemartel@student.42quebec>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/24 07:41:13 by jean-phil         #+#    #+#             */
-/*   Updated: 2021/03/24 09:03:51 by jean-phil        ###   ########.fr       */
+/*   Updated: 2021/03/29 12:18:57 by jean-phil        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "stdio.h"
+
 int	ft_is_prime(int input)
 {
 	int		iterator;
